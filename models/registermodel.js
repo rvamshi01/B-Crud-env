@@ -5,4 +5,4 @@ const registermodel= mongoose.Schema({
     password:{type:String,required:true}
 
 });
-module.exports= mongoose.model("Register",registermodel)
+module.exports= mongoose.model("Register",registermodel);
