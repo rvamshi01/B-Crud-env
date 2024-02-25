@@ -1,4 +1,4 @@
-const mongoose =require("mongoose")
+const mongoose =require("mongoose");
 const registermodel= mongoose.Schema({
     username:{type:String,required:true},
     email:{type:String,required:true},
