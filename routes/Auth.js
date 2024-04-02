@@ -1,5 +1,5 @@
 const app = require("express");
-const router= app.Router()
+const router= app.Router();
 const registermodel= require("../models/registermodel")
 
 router.post("/register", async (req, res) => {
