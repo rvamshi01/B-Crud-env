@@ -5,7 +5,7 @@ const registermodel= require("../models/registermodel")
 router.post("/register", async (req, res) => {
     const { username, email, password } = req.body
     if (!username || !email || !password) {
-        return res.status(400).json({ message: "Username, email, and password are required" })
+        return res.status(400).json({ message: "Username, email, and password are required" });
     }
     try {
         const register = await registermodel.create({ username, email, password })
