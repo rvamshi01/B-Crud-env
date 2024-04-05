@@ -8,7 +8,7 @@ router.post("/register", async (req, res) => {
         return res.status(400).json({ message: "Username, email, and password are required" })
     }
     try {
-        const register = await registermodel.create({ username, email, password });
+        const register = await registermodel.create({ username, email, password })
         res.status(200).json(register);
     } catch (error) {
         res.status(500).json({ message: "An error occurred while registering user" })
