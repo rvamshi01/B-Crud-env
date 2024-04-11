@@ -1,4 +1,4 @@
-const app = require("express") 
+const app = require("express") ;
 const router= app.Router()
 const registermodel= require("../models/registermodel")
 
